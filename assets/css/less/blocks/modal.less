@@ -1,0 +1,44 @@
+.modal {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	padding: 1rem;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	overflow: auto;
+	background-color: fade(@black, 80%);
+
+	&__dialog {
+		position: relative;
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		background-color: #fff;
+	}
+
+	&__close {
+		padding: 0;
+		background: none;
+		border: 0;
+		cursor: pointer;
+		font-size: 2.6rem;
+		position: absolute;
+		top: 0.9rem;
+		right: 0.9rem;
+		z-index: 1;
+		transition: transform .2s linear,
+			       	color .2s linear;
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			transform: translateY(-5px);
+			color: @gray-light;
+		}
+	}
+
+}

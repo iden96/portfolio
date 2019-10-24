@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="assets/css/style.min.css">
 	<title>Portfolio</title>
 </head>
-<body>
+<body class="no-scroll">
 	<!-- Header -->
 	<header class="header">
 		<div class="container">
@@ -407,6 +407,51 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Modals -->
+	<div class="modal">
+		<div class="modal__dialog">
+			
+			<button class="modal__close" type="button">
+				<i class="far fa-times-circle"></i>
+			</button>
+
+			<div class="modal-work">
+				<div class="modal-work__preview">
+					<img src="assets/images/modals/project1/1.png" alt="" class="modal-work__photo">
+				</div>
+				<div class="modal-work__content">
+
+					<div class="modal-work__header">
+						<h3 class="modal-work__title">Project title</h3>
+						<div class="modal-work__info">category <span class="modal-work__divider">|</span> 2018</div>
+					</div>
+							
+					<div class="modal-work__client">
+						<div class="modal-work__label">Client:</div>
+						<div class="modal-work__company">Creative Agency</div>
+					</div>
+					
+					<div class="modal-work__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum est iusto accusantium numquam quod ducimus, soluta tenetur non mollitia! Quo in blanditiis culpa impedit repellat magnam quas placeat totam vero!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum est iusto accusantium numquam quod ducimus, soluta tenetur non mollitia! Quo in blanditiis culpa impedit repellat magnam quas placeat totam vero!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum est iusto accusantium numquam quod ducimus, soluta tenetur non mollitia! </p>
+					</div>
+
+					<div class="modal-work__footer">
+						<button type="button" class="modal-work__btn modal-work__btn--prev">
+							<i class="fas fa-chevron-left"></i>Previous
+						</button>
+						<button type="button" class="modal-work__btn modal-work__btn--next">
+							Next<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
 
 </body>
 </html>
