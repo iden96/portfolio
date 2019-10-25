@@ -1,0 +1,38 @@
+.progress-bar {
+	
+	margin-bottom: 2.6rem;
+	
+	&__item {
+		display: flex;
+		margin-bottom: 0.3rem;
+		display: flex;
+		align-items: center;
+	}
+	
+	&__title {
+		font-size: 0.94rem;
+		font-weight: 300;
+	}
+	
+	&__left {
+		width: auto;
+		min-width: 100px;
+	}
+
+	&__right {
+		padding-left: 1.2rem;
+	}
+
+	&__bar {
+		width: 139px;
+		height: 6px;
+		background-color: #efefef;
+	}
+
+	&__progress {
+		height: 100%;
+		background-color: @gray;
+		transition: width .2s linear;
+	}
+
+}
