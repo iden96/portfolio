@@ -80,4 +80,15 @@ $(function(){
 		event.stopPropagation();
 	});
 
+	/* Slider (slick.js)*/
+	$('#worksSlider').slick({
+	  	infinite: true,
+	  	slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		arrows: false,
+		dots: false,
+		adaptiveHeight: true
+	});
+
 });

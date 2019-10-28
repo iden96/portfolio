@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,400i,700&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/d614163697.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="assets/css/style.min.css">
 	<title>Portfolio</title>
 </head>
@@ -418,7 +418,14 @@
 
 			<div class="modal-work">
 				<div class="modal-work__preview">
-					<img src="assets/images/modals/project1/1.png" alt="" class="modal-work__photo">
+					<div class="modal-work__slider" id="worksSlider">
+						<div>
+							<img src="assets/images/modals/project1/1.png" alt="" class="modal-work__photo">		
+						</div>
+						<div>
+							<img src="https://placehold.it/790x780/333" alt="" class="modal-work__photo">		
+						</div>
+					</div>
 				</div>
 				<div class="modal-work__content">
 
@@ -671,6 +678,8 @@
 	</div>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/d614163697.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="assets/js/app.js"></script>
 
 </body>
