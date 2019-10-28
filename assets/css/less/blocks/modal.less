@@ -1,5 +1,5 @@
 .modal {
-	display: flex;
+	display: none;
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -10,6 +10,10 @@
 	overflow: auto;
 	background-color: fade(@black, 80%);
 
+	&.show {
+		display: flex;
+	}
+
 	&__dialog {
 		position: relative;
 		width: 100%;
@@ -17,6 +21,9 @@
 		margin: auto;
 		background-color: #fff;
 		
+		transform: rotateX(90deg);
+		transition: transform .2s linear;
+
 		&--sm {
 			max-width: 900px;
 		}
