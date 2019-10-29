@@ -32,6 +32,10 @@
 	
 	+ .btn {
 		margin-left: 1rem;
+
+		@media @mobile-sm {
+			margin-left: 0.7rem;
+		}
 	}
 
 	/* Modificators */
@@ -47,6 +51,18 @@
 	&--thin {
 		min-width: 145px;
 		font-size: 0.8rem;
+	}
+
+	@media @tablet {
+		font-size: 1rem;
+		padding: 1rem 1.5em;
+		min-width: 140px;
+	}
+
+	@media @mobile-sm {
+		font-size: 0.94rem;
+		padding: 0.8rem 1.2em;
+		min-width: 100px;
 	}
 
 }

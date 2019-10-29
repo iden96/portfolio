@@ -4,6 +4,15 @@
 	border-radius: 10px;
 	box-shadow: 0 0 4px fade(@black, 25%);
 	transition: box-shadow .2s linear; 
+	
+	@media @mobile {
+		max-width: 370px;
+	}
+
+	@media @mobile-sm {
+		max-width: 370px;
+		margin: 0 auto;
+	}
 
 	&__image {
 		display: block;

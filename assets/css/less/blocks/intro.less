@@ -1,13 +1,28 @@
 .intro {
+
+	@media @mobile {
+		margin-top: 100px;
+	}
+
 }
 
 .intro__inner {
 	display: flex;
 	position: relative;
 	border-bottom: 1px solid fade(@gray, 30%);
-	padding-top: 100px;
-	padding-bottom: 120px;
+	padding-top: 6.6rem;
+	padding-bottom: 8rem;
 	background: url("../images/intro/symbols.png") right bottom no-repeat;
+
+	@media @tablet {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		background-size: 400px auto;
+	}
+
+	@media @mobile-sm {
+		background: none;
+	}
 }
 
 .intro__content {
@@ -19,6 +34,10 @@
 	font-size: 2.13rem;
 	font-weight: 200;
 	color: @black;
+
+	@media @tablet {
+		font-size: 1.5rem;
+	}
 }
 
 .intro__title {
@@ -26,6 +45,10 @@
 	font-size: 3rem;
 	color: @black;
 	font-weight: 700;
+
+	@media @tablet {
+		font-size: 2rem;
+	}
 }
 
 .intro__text {
@@ -39,4 +62,12 @@
 	bottom: -1px;
 	right: 10px;
 	z-index: 1;
+
+	@media @tablet {
+		width: 350px;
+	}
+
+	@media @mobile-sm {
+		display: none;
+	}
 }

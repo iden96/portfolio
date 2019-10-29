@@ -1,6 +1,11 @@
 .news {
 	margin-top: 14rem;
 	margin-bottom: 8rem;
+	
+	@media @tablet {
+		margin-top: 11rem;
+		margin-bottom: 4rem;
+	}
 
 	&__header {
 		margin-bottom: 3.6rem;
@@ -13,6 +18,10 @@
 		color: @black;
 		text-transform: uppercase;
 		font-weight: 700;
+
+		@media @mobile {
+			font-size: 2rem;
+		}
 	}
 
 	&__text {

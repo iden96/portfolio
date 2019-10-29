@@ -5,11 +5,21 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 	
 	&__credits {
 		display: flex;
 		align-items: center;
+		@media @tablet {
+			margin-bottom: 0.5rem;
+			width: 100%;
+			justify-content: center;
+		}
+
+		@media @mobile {
+			flex-direction: column;
+		}
 	}
 
 	&__copyright {
@@ -18,6 +28,12 @@
 		font-size: 0.94rem;
 		border-right: 1px solid fade(@gray,35%);
 		color: @gray-light;
+
+		@media @mobile {
+			margin-right: 0;
+			padding-right: 0;
+			border: 0;
+		}
 	}
 
 	&__social {
@@ -37,6 +53,10 @@
 			}
 
 		}
+		
+		@media @mobile {
+			margin-top: 0.5rem;
+		}
 
 	}
 	
@@ -44,6 +64,12 @@
 		display: flex;
 		align-items: center;
 		font-size: 0.94rem;
+
+		@media @tablet {
+			width: 100%;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
 	}
 
 	&__link {
@@ -71,6 +97,10 @@
 				color: @black;
 			}
 		}
+
+		@media @tablet {
+			margin: 0 0.5rem 0.5rem;
+		}	
 
 	}
 

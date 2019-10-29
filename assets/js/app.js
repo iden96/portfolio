@@ -97,9 +97,15 @@ $(function(){
 	  $('#worksSlider').slick('slickPrev');
 	});
 
-	$('.slickNext').on('click', function() {
+	$('.slickNext').on('click', function(event) {
 		event.preventDefault();
 	  $('#worksSlider').slick('slickNext');
+	});
+
+	/* Mobile nav */
+	$('#navToggle').on('click', function(event) {
+		event.preventDefault();
+	  $('#nav').toggleClass('show');
 	});
 
 });
