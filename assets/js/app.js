@@ -87,8 +87,19 @@ $(function(){
 		slidesToScroll: 1,
 		fade: true,
 		arrows: false,
-		dots: false,
-		adaptiveHeight: true
+		dots: true,
+		prevArrow: $('.slickPrev'),
+		nextArrow: $('.slickNext')
+	});
+
+	$('.slickPrev').on('click', function(event) {
+	  event.preventDefault();
+	  $('#worksSlider').slick('slickPrev');
+	});
+
+	$('.slickNext').on('click', function() {
+		event.preventDefault();
+	  $('#worksSlider').slick('slickNext');
 	});
 
 });

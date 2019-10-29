@@ -1,0 +1,52 @@
+.slick-slider {
+	position: relative;
+}
+
+.slick-list,
+.slick-track {
+	height: 100% !important;
+}
+
+.slick-track {
+	width: 100%;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	bottom: 1.4rem;
+	left: 0;
+	z-index: 1;
+	
+	li {
+		margin: 0 0.5rem;
+
+		&.slick-active {
+			button {
+				background-color: #fff;
+			}
+		}
+	}
+
+	button {
+		width: 11px;
+		height: 11px;
+		padding: 0;
+		border: 1px solid @white;
+		border-radius: 50%;
+		background: none;
+		background-color: transparent;
+		font-size: 0;
+		color: transparent;
+		cursor: pointer;
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
